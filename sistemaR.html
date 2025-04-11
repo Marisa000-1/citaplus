@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Web de Referencias Académicas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f6f2;
+      color: #4b3f2f;
+    }
+    header {
+      background: linear-gradient(to right, #8d6e63, #a1887f);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #fffaf4;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #6d4c41;
+      padding: 1rem;
+      font-weight: bold;
+      flex: 1 1 auto;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #f1eae4;
+      border-radius: 5px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 3rem 1rem;
+      background-color: #fffaf4;
+      flex-wrap: wrap;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    .hero-text {
+      max-width: 500px;
+      padding: 1rem;
+    }
+    .hero-text h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #6d4c41;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .btn {
+      background-color: #6d4c41;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background-color: #5d4037;
+    }
+    section {
+      padding: 2rem 1.5rem;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      color: #6d4c41;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .extra-section {
+      background-color: #f3ede7;
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+      margin: 2rem auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #6d4c41;
+      color: white;
+      margin-top: 2rem;
+    }
+    .search-container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: #fffaf4;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .search-container input,
+    .search-container textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .search-container button {
+      background-color: #6d4c41;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.4rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .search-container button:hover {
+      background-color: #5d4037;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Media Query para pantallas pequeñas */
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav a {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CitaPlus ("Más que citas académicas")</h1>
+  </header>
+  
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#funciones">Funciones</a>
+    <a href="#ventajas">Ventajas</a>
+    <a href="#casos">Casos de Uso</a>
+    <a href="#busqueda">Buscar</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <h2>Una herramienta moderna para estudiantes de nivel superior</h2>
+      <p>Este sistema web está diseñado para facilitar la búsqueda, clasificación y organización de referencias bibliográficas y recursos académicos de manera rápida y eficiente.</p>
+      <a href="#busqueda"><button class="btn">Explorar Sistema</button></a>
+    </div>
+    <img src="citar.png" alt="Icono de referencia bibliográfica">
+  </section>
+
+  <section id="funciones">
+    <h2 style="text-align:center; color:#6d4c41; font-family:'Montserrat', sans-serif;">Funciones Destacadas</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Identificación Automática</h3>
+        <p>Utiliza algoritmos inteligentes para reconocer y clasificar automáticamente referencias bibliográficas desde múltiples formatos.</p>
+      </div>
+      <div class="card">
+        <h3>Clasificación Temática</h3>
+        <p>Organiza los recursos académicos por tema, autor, año o tipo de publicación con solo unos clics.</p>
+      </div>
+      <div class="card">
+        <h3>Exportación Rápida</h3>
+        <p>Permite exportar las referencias en formatos como APA, MLA o IEEE para tus trabajos académicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ventajas" class="extra-section">
+    <h2 style="text-align:center; color:#6d4c41; font-family:'Montserrat', sans-serif;">Ventajas del Sistema</h2>
+    <ul>
+      <li>✅ Ahorro de tiempo en la búsqueda y registro de referencias.</li>
+      <li>✅ Reducción de errores de citación.</li>
+      <li>✅ Compatible con plataformas educativas.</li>
+      <li>✅ Accesible desde cualquier dispositivo.</li>
+    </ul>
+  </section>
+
+  <section id="casos" class="extra-section">
+    <h2 style="text-align:center; color:#6d4c41; font-family:'Montserrat', sans-serif;">Casos de Uso</h2>
+    <p>Este sistema ha sido probado por estudiantes universitarios en la elaboración de tesis y residencias mejorando significativamente la eficiencia y precisión en el manejo de fuentes.</p>
+    <img src="imagen.png" alt="Ejemplo visual" style="display:block; margin:1rem auto; max-width:300px;">
+  </section>
+
+  <section id="busqueda" class="search-container">
+    <h2 style="text-align:center; color:#6d4c41; font-family:'Montserrat', sans-serif;">Buscar Referencia</h2>
+    <h2 style="text-align:center; color:#6d4c41; font-family:'Montserrat', sans-serif;">(Puedes elegir solo una y buscarla)</h2>
+    <input type="text" placeholder="Autor">
+    <input type="text" placeholder="Título del libro o artículo">
+    <input type="text" placeholder="Fecha">
+    <textarea rows="4" placeholder="Texto descriptivo o palabras clave"></textarea>
+    <button>Buscar</button>
+    <img src="ref.png" alt="Buscar referencias" style="display:block; margin:1.5rem auto; max-width:100px;">
+  </section>
+
+  <section id="contacto">
+    <h2 style="text-align:center; color:#6d4c41; font-family:'Montserrat', sans-serif;">Contacto</h2>
+    <p style="text-align:center;">¿Tienes dudas o sugerencias? Escríbenos a <a href="mailto:soporte@referenciasweb.com">soporte@referenciasweb.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Sistema Web de Referencias Académicas | Todos los derechos reservados.
+  </footer>
+</body>
+</html>
